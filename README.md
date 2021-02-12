@@ -1,16 +1,18 @@
-
+![License Badge](https://img.shields.io/badge/license-MIT-green)
   
-# prjectect
+# Project1
 
 ## TABLE OF CONTENTS
 
 * [Description](#description)
 * [Usage](#usage)
 * [Credits](#credits)
-
+* [License](#license)
 
 ## DESCRIPTION
 
-sfhdgfh
+description
 
-
+## License
+    
+    License used: MIT 
