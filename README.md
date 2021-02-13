@@ -14,15 +14,25 @@
 
 ## DESCRIPTION
 
-This is an application that uses NODE to generate a README Markdown file based on user input, by asking a series of questions.
+When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This is an application that uses NODE to generate a README Markdown file based on user input, by asking a series of questions in the comman line.
 
 ## INSTALLATION
 
-First, download the files from this repository, then open the terminal. Inside the folder, use 'npm init' to initialize npm package, then 'npm i' to install dependencies.
+First, download the files from this repository, then open the terminal. Inside the folder, use 'npm init' to initialize npm package, then 'npm i' to install dependencies. Your project is ready for use!
 
 ### USAGE
 
-Enter 'node index.js' into the terminal. You will then be given a series of questions to answer. Your responses to these answers will be used to generate your new README file.
+This application can be invoked by entering the following command into the terminal
+
+```bash
+node index.js
+```
+
+You will then be given a series of questions to answer. Your responses to these answers will be used to generate your new README file.
+
+[Here is a link to the video tutorial](https://drive.google.com/file/d/1nmGZE_kYOEElJxQRK2SvyqmkTjvf7Jbr/view?usp=sharing)
+
+![Command Line in Action](images/in-action.png)
 
 ## CONTRIBUTE
 

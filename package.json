@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/cmoss703/README-generator/issues"
   },
-  "homepage": "https://github.com/cmoss703/README-generator#readme"
+  "homepage": "https://github.com/cmoss703/README-generator#readme",
+  "devDependencies": {}
 }
