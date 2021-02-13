@@ -18,7 +18,8 @@ const questions = [
     'Please enter any installation instructions:',
     'Please enter any usage information:',
     'Please enter any contributing information:',
-    'Please enter any testing instructions:'
+    'Please enter any testing instructions:',
+    'Please enter the link to your deployed app or website, if applicable.'
 ];
 
 const licenseArray = [
@@ -88,11 +89,11 @@ inquirer
             type: 'input',
             message: questions[10],
         },
-        // {
-        //     name: 'title',
-        //     type: 'input',
-        //     message: questions[11],
-        // },
+        {
+            name: 'url',
+            type: 'input',
+            message: questions[11],
+        },
     ])
 
 .then((data) => {

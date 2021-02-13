@@ -33,9 +33,9 @@ function renderLicenseSection(license) {
 
   if (license != 'none') {
   
-    return  `## License
-    
-    License used: ${license} `
+    return  `#### License
+
+    This Project is licensed for use by ${license}.`
   
     } else {
       return ''
@@ -51,13 +51,31 @@ function generateMarkdown(data) {
 ## TABLE OF CONTENTS
 
 * [Description](#description)
+* [Installaion](#installation)
 * [Usage](#usage)
+* [Testing](#testing)
 * [Credits](#credits)
 ${renderLicenseLink(data.license)}
 
 ## DESCRIPTION
 
 ${data.description}
+
+## INSTALLATION
+
+### USAGE
+
+### TESTING
+
+#### CREDITS
+
+This project was created by ${data.name}.
+
+Email: ${data.email}
+
+Github Repo: ${data.github}
+
+Link to Deployed Site: [${data.title}](${data.url})
 
 ${renderLicenseSection(data.license)}
 `;
