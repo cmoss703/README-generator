@@ -26,7 +26,7 @@ const licenseArray = [
     'MIT',
     'Apache-2.0'
     'none'
-]; 
+];
 
 // Data to be written into file as an empty string for now, to be re-assigned later.
 var fileContent;
@@ -38,12 +38,12 @@ inquirer
             name: 'name',
             type: 'input',
             message: questions[0],
-        },        
+        },
         {
             name: 'github',
             type: 'input',
             message: questions[1],
-        },        
+        },
         {
             name: 'email',
             type: 'input',
@@ -58,14 +58,14 @@ inquirer
             name: 'description',
             type: 'input',
             message: questions[4],
-        },        
+        },
         {
             name: 'license',
             type: 'list',
             message: questions[5],
             choices: licenseArray,
             default: 'none'
-        },        
+        },
         {
             name: 'repo',
             type: 'input',
@@ -80,12 +80,12 @@ inquirer
             name: 'usage',
             type: 'input',
             message: questions[8],
-        },        
+        },
         {
             name: 'contribute',
             type: 'input',
             message: questions[9],
-        },        
+        },
         {
             name: 'testing',
             type: 'input',
@@ -98,11 +98,11 @@ inquirer
         },
     ])
 
-// The answers to these questions are returned as data and sent to the generateMarkdown file for use in creating the new file.
-.then((data) => {
-    fileContent = generateMarkdown(data);
-    writeToFile('README.md', fileContent)
-});
+    // The answers to these questions are returned as data and sent to the generateMarkdown file for use in creating the new file.
+    .then((data) => {
+        fileContent = generateMarkdown(data);
+        writeToFile('README.md', fileContent)
+    });
 
 // Function to write README file
 function writeToFile(fileName, data) {
@@ -112,7 +112,7 @@ function writeToFile(fileName, data) {
 }
 
 // Function to initialize app
-function init() {}
+function init() { }
 
 // Function call to initialize app
 init();

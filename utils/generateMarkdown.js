@@ -3,8 +3,8 @@
 function renderLicenseBadge(license) {
 
   if (license != 'none') {
-  
-  return  `![License Badge](https://img.shields.io/badge/license-${license}-green)`
+
+    return `![License Badge](https://img.shields.io/badge/license-${license}-green)`
 
   } else {
     return ''
@@ -17,12 +17,12 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
 
   if (license != 'none') {
-  
-    return  `* [License](#license)`
-  
-    } else {
-      return ''
-    }
+
+    return `* [License](#license)`
+
+  } else {
+    return ''
+  }
 
 }
 
@@ -32,22 +32,21 @@ function renderLicenseSection(license) {
 
 
   if (license != 'none') {
-  
-    return  `#### License
+
+    return `#### License
     
     This Project is licensed for use by ${license}.`
-  
-    } else {
-      return ''
-    }
+
+  } else {
+    return ''
+  }
 }
 
 // A function to generate markdown for README using data from index file.
 // The License badge, section, and link are returned only if there is data in them. If not, they are not shown.
 function generateMarkdown(data) {
-  return `${renderLicenseBadge(data.license)}
-  
-# ${data.title}
+  return `# ${data.title}
+${renderLicenseBadge(data.license)}
 
 ## TABLE OF CONTENTS
 
@@ -56,7 +55,7 @@ function generateMarkdown(data) {
 * [Usage](#usage)
 * [Contribute](#contribute)
 * [Testing](#testing)
-* [Credits](#credits)
+* [Questions](#questions)
 ${renderLicenseLink(data.license)}
 
 ## DESCRIPTION
@@ -79,11 +78,11 @@ ${data.contribute}
 
 ${data.testing}
 
-### CREDITS
+### QUESTIONS
 
-This project was created by [${data.name}](https://github.com/${data.github}).
+For any additional questions about this project, please contact ${data.name} on github at the following link: [${data.github}](https://github.com/${data.github}).
 
-Email: ${data.email}
+You may also contact me via email at ${data.email}
 
 Github Repo: ${data.repo}
 
